@@ -1,0 +1,277 @@
+body {
+    background-color:  #efee96;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    margin: 0%;
+    padding: 0%;
+    grid-gap: 0%;
+
+}
+.grid_nav {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0%;
+}
+#logo{
+    float: left;
+
+}
+nav ul {
+    background-color:rgb(138, 108, 69) ;
+    margin:0;
+    list-style: none;
+    text-align: right;
+    height: 90px;
+
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a {
+    display: inline-block;
+    background-color: rgb(207, 161, 101);
+    border-bottom: 4px solid #efee96;
+    color:whitesmoke ;
+    text-decoration: none;
+    padding: 32px;
+    font-size: 20px;
+
+}
+nav ul li a:hover {
+    background-color: #c6c06a;
+    border-bottom: 4px solid  #efee96;
+    padding: auto;
+    color: darkgreen;
+    font-size: 16px;
+}
+.grid_header {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0%;
+    padding: 0%;
+    background-color: #efee96;
+    width: 100%;
+}
+header {
+    
+    width: 100%;
+}
+header > img {
+    width: 70%
+}
+header > h2 {
+    color:rgb(59, 128, 31);
+    text-align: center;
+    border-bottom-style: ridge;
+    font-size: 30px;
+    border-bottom-width: 10px;
+
+  }
+#frente{
+    padding: 1px;
+    width: 1350px;
+}
+#back{
+    padding:1px;
+    width: 100%
+}
+header img#back {
+    display: none; 
+}
+.grid_aside {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: auto;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+}
+aside {
+    background-color:  rgb(138, 108, 69);
+    text-align: center; 
+    margin: 0%;
+}
+h1 {
+    color: rgb(207, 161, 101);
+    font-size: 25px;
+    background-color: #efee96;
+    text-align: center;
+
+}
+aside > strong > ul > li {
+    display: inline-block;
+    color: rgb(207, 161, 101);
+    padding: 5%;
+    list-style: none;
+    text-decoration: none;
+}
+strong > ul > li:hover {
+    background-color:  #efee96;
+    padding: 70px;
+    color: rgb(59, 128, 31);
+
+}
+#redonda {
+    height: 120px;
+    width: 120px;
+    padding: 10px;
+}
+
+/*#mapa {
+    height: 500px;
+    width: 500px;
+    margin: 0%;
+
+}*/
+section {
+    background-color: rgb(138, 108, 69);
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+section > h2 {
+    color: rgb(207, 161, 101);
+    background-color: #efee96;
+}
+
+/*hospedagem*/
+#hosp {
+    display: inline;
+    margin:0% 20%;
+    padding: 0%;
+    width: 60%;
+}
+
+table { 
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+th{
+    font-weight: bold;
+}
+th, td {
+    padding: 10px;
+}
+thead tr {
+    border-bottom: solid 3px darkgreen;
+}
+
+tbody tr:hover {
+    background-color: rgb(138, 108, 69);
+}
+tfoot { 
+    background-color:rgb(138, 108, 69);
+    color: #efee96;
+    font-style: italic;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(59, 128, 31);
+    margin: 0%;
+    padding: 0%;
+
+}
+footer > p {
+    font-style: italic;
+    color: whitesmoke;
+    font-size: 20px;
+    display: list-item;
+}
+/*reservas*/
+
+
+fieldset {
+    width: 100%;
+    background-color:rgb(138, 108, 69);
+    color:  whitesmoke;
+    padding: 40px;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        height: 140px;
+    }
+    nav ul li{
+        display: list-item;
+        text-align: right;
+    }
+    nav ul li a {
+        padding: 15px;
+        font-size: 12px;
+    
+    }
+    nav ul li a:hover {
+        background-color: #c6c06a;
+        font-size: 8px;
+    }
+    
+    header > h2 {
+        font-size: 20px
+    }
+    header img#frente {
+        display: none; 
+    }
+    header img#back {
+        display: inline; 
+        margin: 0px 40px;
+    }
+
+    aside > strong > h1 {
+        color: darkgreen;
+        font-size: 17px;
+    }
+    aside > strong > ul > li {
+        color: darkgreen;
+    }
+    strong > ul > li:hover {
+        padding: 10px;
+    }
+    aside img#redonda {
+        width: 50px;
+        height: 50px;
+    }
+    section > h2 {
+        color: darkgreen;
+        font-size: 15px;
+    }
+
+    section img#mapa {
+        display: none;
+    }
+    section > iframe { 
+        display: none;
+    }
+    fieldset {
+        width: 60%;
+    }
+    footer img {
+        height: 10%;
+        width: 10%;
+        display: list-item ;
+    }
+
+
+}
+
+
+
+
+
